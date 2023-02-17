@@ -1,0 +1,8 @@
+sketch
+figma
+node_modules
+*.sketch
+*.xd
+*.fig
+.DS_Store
+
