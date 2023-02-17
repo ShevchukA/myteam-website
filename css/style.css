@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
 body {
   font-family: "Livvic", sans-serif; }
 
@@ -50,7 +60,27 @@ body {
   line-height: 28px;
   color: #79c8c7; }
 
+.footer {
+  height: 196px;
+  display: flex;
+  background-color: #002529; }
+
+.contact {
+  height: 200px;
+  display: flex;
+  background-color: #f67e7e; }
+
 .info {
   height: 700px;
   display: flex;
   background-color: #014e56; }
+
+.features {
+  height: 684px;
+  display: flex;
+  background-color: #012f34; }
+
+.testimonials {
+  height: 745px;
+  display: flex;
+  background-color: #004047; }
