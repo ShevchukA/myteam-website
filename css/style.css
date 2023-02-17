@@ -1,3 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap");
 body {
   font-family: "Livvic", sans-serif; }
+
+.headding-primary {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  color: #ffffff; }
+  .headding-primary--marked {
+    color: #f67e7e; }
+  .headding-primary--small {
+    font-size: 64px;
+    line-height: 56px; }
+
+.headding-secondary {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff; }
+
+.headding-tertiary {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #f67e7e; }
+
+.text-primary {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff; }
+
+.text-secondary {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff; }
+
+.name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79c8c7; }
+
+.occupation {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 28px;
+  color: #79c8c7; }
+
+.info {
+  height: 700px;
+  display: flex;
+  background-color: #014e56; }

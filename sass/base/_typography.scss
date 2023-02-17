@@ -3,3 +3,62 @@
 body {
   font-family: "Livvic", sans-serif;
 }
+
+.headding-primary {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  color: $color-white;
+
+  &--marked {
+    color: $color-light-coral;
+  }
+
+  &--small {
+    font-size: 64px;
+    line-height: 56px;
+  }
+}
+
+.headding-secondary {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: $color-white;
+}
+
+.headding-tertiary {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: $color-light-coral;
+}
+
+.text-primary {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: $color-white;
+}
+
+.text-secondary {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: $color-white;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: $color-rapture-blue;
+}
+
+.occupation {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 28px;
+  color: $color-rapture-blue;
+}
