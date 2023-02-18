@@ -1,5 +1,43 @@
 .footer {
   height: 196px;
-  display: flex;
   background-color: $color-dark-green;
+  padding: 48px $global-padding;
+  display: grid;
+  grid-template-areas:
+    "logo adress adress social social"
+    "links adress adress copyright copyright";
+  gap: 30px 30px;
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  &__links {
+    grid-area: links;
+    text-align: left;
+    align-self: self-end;
+
+    & .link:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__adress {
+    grid-area: adress;
+  }
+
+  &__social {
+    grid-area: social;
+    text-align: end;
+
+    & .link:not(:first-child) {
+      margin-left: 16px;
+    }
+  }
+
+  &__copyright {
+    grid-area: copyright;
+    text-align: right;
+    // align-self: self-end;
+  }
 }

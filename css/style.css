@@ -52,6 +52,8 @@ body {
   font-size: 15px;
   line-height: 25px;
   color: #ffffff; }
+  .text-secondary--dark {
+    color: #79c8c7; }
 
 .text-name {
   font-weight: 700;
@@ -137,8 +139,29 @@ body {
 
 .footer {
   height: 196px;
-  display: flex;
-  background-color: #002529; }
+  background-color: #002529;
+  padding: 48px 165px;
+  display: grid;
+  grid-template-areas: "logo adress adress social social" "links adress adress copyright copyright";
+  gap: 30px 30px; }
+  .footer__logo {
+    grid-area: logo; }
+  .footer__links {
+    grid-area: links;
+    text-align: left;
+    align-self: self-end; }
+    .footer__links .link:not(:last-child) {
+      margin-right: 40px; }
+  .footer__adress {
+    grid-area: adress; }
+  .footer__social {
+    grid-area: social;
+    text-align: end; }
+    .footer__social .link:not(:first-child) {
+      margin-left: 16px; }
+  .footer__copyright {
+    grid-area: copyright;
+    text-align: right; }
 
 .navigation {
   position: absolute;

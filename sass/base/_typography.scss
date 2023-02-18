@@ -54,6 +54,10 @@ body {
   font-size: 15px;
   line-height: 25px;
   color: $color-white;
+
+  &--dark {
+    color: $color-rapture-blue;
+  }
 }
 
 .text-name {
