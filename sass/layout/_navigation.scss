@@ -1,0 +1,27 @@
+.navigation {
+  position: absolute;
+  width: 100%;
+  padding: 0 $global-padding;
+  top: 73px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  &__leftContainer,
+  &__rightContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 40px;
+  }
+
+  &__link {
+    margin-left: 40px;
+  }
+}

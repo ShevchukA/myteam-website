@@ -2,6 +2,21 @@
   height: 700px;
   display: flex;
   background-color: $color-midnight-green;
+
+  &__leftContainer {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 165px;
+  }
+
+  &__rightContainer {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    padding-right: 165px;
+    padding-left: 110px;
+  }
 }
 
 .features {

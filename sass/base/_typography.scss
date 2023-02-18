@@ -10,13 +10,13 @@ body {
   line-height: 100px;
   color: $color-white;
 
-  &--marked {
-    color: $color-light-coral;
-  }
-
   &--small {
     font-size: 64px;
     line-height: 56px;
+  }
+
+  & > * {
+    color: $color-light-coral;
   }
 }
 

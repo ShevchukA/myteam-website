@@ -1,0 +1,54 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    height: 48px;
+    border: 2px solid;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  &--light {
+    background: none;
+    border-color: $color-white;
+    color: $color-white;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color-white;
+      border-color: $color-white;
+      color: $color-dark-green;
+    }
+  }
+
+  &--dark {
+    background: none;
+    border-color: $color-sacramento-state-green;
+    color: $color-sacramento-state-green;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color-sacramento-state-green;
+      border-color: $color-sacramento-state-green;
+      color: $color-white;
+    }
+  }
+
+  &--secondary {
+    background: $color-white;
+    border-color: $color-white;
+    color: $color-dark-green;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color-police-blue;
+      border-color: $color-police-blue;
+    }
+  }
+}
