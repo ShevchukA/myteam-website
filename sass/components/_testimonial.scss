@@ -1,0 +1,12 @@
+.testimonial {
+  & .text-name {
+    margin-top: 24px;
+  }
+
+  & img {
+    border: 2px solid $color-white;
+    border-radius: 50%;
+    width: 62px;
+    margin-top: 32px;
+  }
+}

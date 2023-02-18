@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,600;0,700;1,400;1,500;1,600&display=swap");
 
 body {
   font-family: "Livvic", sans-serif;
@@ -25,6 +25,14 @@ body {
   font-size: 48px;
   line-height: 48px;
   color: $color-white;
+
+  &--dark {
+    color: $color-dark-green;
+  }
+
+  & > * {
+    color: $color-rapture-blue;
+  }
 }
 
 .headding-tertiary {
@@ -48,16 +56,16 @@ body {
   color: $color-white;
 }
 
-.name {
+.text-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
   color: $color-rapture-blue;
 }
 
-.occupation {
+.text-occupation {
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 13px;
   line-height: 28px;
   color: $color-rapture-blue;

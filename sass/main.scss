@@ -1,18 +1,24 @@
+//ABSTRACTS
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+//BASE
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
 
+//COMPONENTS
 @import "components/button";
 @import "components/link";
 @import "components/feature";
+@import "components/testimonial";
 
+//COMMON LAYOUT
 @import "layout/footer";
 @import "layout/navigation";
 @import "layout/contact";
 
+//PAGES LAYOUT
 @import "pages/home";
 @import "pages/about";
 @import "pages/contact";

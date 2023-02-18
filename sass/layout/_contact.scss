@@ -1,5 +1,16 @@
 .contact {
   height: 200px;
+  padding: 0 260px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: $color-light-coral;
+  position: relative;
+
+  &__decor1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+  }
 }

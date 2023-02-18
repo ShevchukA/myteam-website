@@ -79,5 +79,32 @@
 .testimonials {
   height: 745px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: $color-deep-jungle-green;
+  padding: 0 $global-padding;
+  text-align: center;
+  position: relative;
+
+  &__container {
+    margin-top: 92px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+  }
+
+  &__decor1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+  }
+
+  &__decor2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+  }
 }

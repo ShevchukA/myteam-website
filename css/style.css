@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,600;0,700;1,400;1,500;1,600&display=swap");
 *,
 *::after,
 *::before {
@@ -30,6 +30,10 @@ body {
   font-size: 48px;
   line-height: 48px;
   color: #ffffff; }
+  .headding-secondary--dark {
+    color: #002529; }
+  .headding-secondary > * {
+    color: #79c8c7; }
 
 .headding-tertiary {
   font-weight: 700;
@@ -49,15 +53,15 @@ body {
   line-height: 25px;
   color: #ffffff; }
 
-.name {
+.text-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
   color: #79c8c7; }
 
-.occupation {
+.text-occupation {
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 13px;
   line-height: 28px;
   color: #79c8c7; }
@@ -122,6 +126,15 @@ body {
   .feature__info p {
     margin-top: 16px; }
 
+.testimonial .text-name {
+  margin-top: 24px; }
+
+.testimonial img {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  width: 62px;
+  margin-top: 32px; }
+
 .footer {
   height: 196px;
   display: flex;
@@ -150,8 +163,17 @@ body {
 
 .contact {
   height: 200px;
+  padding: 0 260px;
   display: flex;
-  background-color: #f67e7e; }
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f67e7e;
+  position: relative; }
+  .contact__decor1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px; }
 
 .info {
   height: 700px;
@@ -214,4 +236,25 @@ body {
 .testimonials {
   height: 745px;
   display: flex;
-  background-color: #004047; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #004047;
+  padding: 0 165px;
+  text-align: center;
+  position: relative; }
+  .testimonials__container {
+    margin-top: 92px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px; }
+  .testimonials__decor1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px; }
+  .testimonials__decor2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100px; }
