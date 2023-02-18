@@ -3,4 +3,9 @@
   font-weight: 600;
   text-decoration: none;
   color: $color-white;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $color-light-coral;
+  }
 }

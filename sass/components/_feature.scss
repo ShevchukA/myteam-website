@@ -1,0 +1,14 @@
+.feature {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 32px;
+
+  &__info {
+    margin-left: 23px;
+  }
+
+  &__info p {
+    margin-top: 16px;
+  }
+}

@@ -8,7 +8,7 @@
     flex-basis: 50%;
     display: flex;
     align-items: center;
-    padding-left: 165px;
+    padding-left: $global-padding;
   }
 
   &__rightContainer {
@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    padding-right: 165px;
+    padding-right: $global-padding;
     padding-left: 110px;
   }
 
@@ -40,7 +40,7 @@
     width: 50px;
     height: 4px;
     background-color: $color-rapture-blue;
-    margin-bottom: 80px;
+    margin-bottom: 79px;
   }
 }
 
@@ -48,6 +48,32 @@
   height: 684px;
   display: flex;
   background-color: $color-sacramento-state-green;
+  position: relative;
+
+  &__leftBlock {
+    flex-basis: 50%;
+    padding: 140px 110px 0 $global-padding;
+  }
+
+  &__rightBlock {
+    flex-basis: 50%;
+    padding: 200px $global-padding 0 50px;
+  }
+
+  &__decor1 {
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+    width: 200px;
+  }
+
+  &__decor2 {
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: $color-light-coral;
+    margin-bottom: 54px;
+  }
 }
 
 .testimonials {
