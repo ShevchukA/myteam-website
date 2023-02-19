@@ -118,7 +118,8 @@ body {
   .link:hover {
     color: #f67e7e; }
   .link--social svg {
-    fill: #ffffff; }
+    fill: #ffffff;
+    transition: all 0.2s; }
   .link--social svg:hover {
     fill: #f67e7e; }
 
@@ -149,6 +150,56 @@ body {
     top: -35px;
     left: 50%;
     transform: translateX(-50%); }
+
+.card {
+  text-align: center;
+  position: relative;
+  min-width: 350px;
+  min-height: 253px;
+  perspective: 1500px; }
+  .card__side1 {
+    height: 100%;
+    padding: 35px;
+    background-color: #012f34;
+    backface-visibility: hidden; }
+  .card__side2 {
+    height: 100%;
+    padding: 35px 25px;
+    backface-visibility: hidden;
+    background-color: #002529;
+    position: absolute;
+    top: 0;
+    transform: rotateY(180deg); }
+    .card__side2 .text-secondary {
+      margin: 10px 0; }
+  .card__photo {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 96px;
+    margin-bottom: 16px; }
+  .card__btn {
+    cursor: pointer;
+    border: none;
+    background-color: #f67e7e;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 100;
+    transition: all 0.2s; }
+    .card__btn:hover {
+      background-color: #79c8c7; }
+    .card__btn--active {
+      background-color: #79c8c7;
+      transform: rotate(45deg); }
+      .card__btn--active:hover {
+        background-color: #f67e7e; }
 
 .footer {
   height: 196px;
@@ -318,8 +369,29 @@ body {
     margin-bottom: 40px; }
 
 .personality {
+  background-color: #004047;
+  padding: 0 165px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 1002px;
-  background-color: #004047; }
+  position: relative; }
+  .personality__container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 76px 30px;
+    margin-top: 64px; }
+  .personality__decor1 {
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 200px; }
+  .personality__decor2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100px; }
 
 .clients {
   height: 437px;
@@ -335,7 +407,7 @@ body {
     justify-content: space-between; }
     .clients__links > img {
       object-fit: contain;
-      max-width: 182px;
+      max-width: 180px;
       max-height: 45px; }
   .clients__decor1 {
     position: absolute;
