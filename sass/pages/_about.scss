@@ -11,9 +11,6 @@
     margin-right: 30px;
   }
 
-  &__rightBlock {
-  }
-
   &__decor1 {
     position: absolute;
     bottom: 0;
@@ -31,4 +28,37 @@
 }
 
 .personality {
+  height: 1002px;
+  background-color: $color-deep-jungle-green;
+}
+
+.clients {
+  height: 437px;
+  background-color: $color-sacramento-state-green;
+  padding: 140px $global-padding 0 $global-padding;
+  text-align: center;
+  position: relative;
+
+  &__headding {
+    margin-bottom: 64px;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    & > img {
+      object-fit: contain;
+      max-width: 182px;
+      max-height: 45px;
+    }
+  }
+
+  &__decor1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+  }
 }

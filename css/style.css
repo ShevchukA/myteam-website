@@ -316,3 +316,29 @@ body {
     height: 4px;
     background-color: #f67e7e;
     margin-bottom: 40px; }
+
+.personality {
+  height: 1002px;
+  background-color: #004047; }
+
+.clients {
+  height: 437px;
+  background-color: #012f34;
+  padding: 140px 165px 0 165px;
+  text-align: center;
+  position: relative; }
+  .clients__headding {
+    margin-bottom: 64px; }
+  .clients__links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+    .clients__links > img {
+      object-fit: contain;
+      max-width: 182px;
+      max-height: 45px; }
+  .clients__decor1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px; }
