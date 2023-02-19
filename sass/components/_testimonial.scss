@@ -1,12 +1,26 @@
 .testimonial {
+  position: relative;
+
+  & .text-secondary {
+    position: relative;
+    z-index: 1;
+  }
+
   & .text-name {
     margin-top: 24px;
   }
 
-  & img {
+  &__photo {
     border: 2px solid $color-white;
     border-radius: 50%;
     width: 62px;
     margin-top: 32px;
+  }
+
+  &__quotes {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
