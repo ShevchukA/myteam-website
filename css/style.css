@@ -218,6 +218,43 @@ body {
       .card__btn--active:hover {
         background-color: #f67e7e; }
 
+.form {
+  display: flex;
+  flex-direction: column; }
+  .form__input {
+    height: 42px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #014e56;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 0;
+    padding-left: 14px; }
+    .form__input:last-child {
+      height: 84px;
+      resize: none; }
+    .form__input:focus {
+      outline: none;
+      border-bottom: 1px solid #ffffff; }
+    .form__input::placeholder {
+      color: rgba(255, 255, 255, 0.5); }
+    .form__input--invalid {
+      color: rgba(246, 126, 126, 0.5);
+      border-bottom: 1px solid #f67e7e; }
+  .form__label {
+    font-family: inherit;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 10px;
+    color: #f67e7e;
+    position: relative;
+    margin: 8px 0 17px 14px;
+    visibility: hidden; }
+    .form__label--visible {
+      visibility: visible; }
+
 .footer {
   height: 196px;
   background-color: #002529;
@@ -457,7 +494,3 @@ body {
     bottom: 0;
     right: -100px;
     width: 200px; }
-
-.submit {
-  display: flex;
-  flex-direction: column; }
