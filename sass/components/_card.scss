@@ -6,10 +6,19 @@
   perspective: 1500px;
 
   &__side1 {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
     height: 100%;
     padding: 35px;
     background-color: $color-sacramento-state-green;
     backface-visibility: hidden;
+    transition: all 0.7s;
+
+    &--turned {
+      transform: rotateY(-180deg);
+    }
   }
 
   &__side2 {
@@ -19,10 +28,20 @@
     background-color: $color-dark-green;
     position: absolute;
     top: 0;
+    left: 0;
     transform: rotateY(180deg);
+    transition: all 0.7s;
 
     & .text-secondary {
-      margin: 10px 0;
+      margin: 15px 0;
+    }
+
+    & .link:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &--turned {
+      transform: rotateY(0);
     }
   }
 
@@ -44,11 +63,10 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    bottom: -28px;
+    left: calc(50% - 28px);
     z-index: 100;
-    transition: all 0.2s;
+    transition: all 0.5s;
 
     &:hover {
       background-color: $color-rapture-blue;
