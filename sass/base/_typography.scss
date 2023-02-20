@@ -40,6 +40,11 @@ body {
   font-size: 18px;
   line-height: 28px;
   color: $color-light-coral;
+
+  &--big {
+    font-size: 32px;
+    line-height: 45px;
+  }
 }
 
 .text-primary {

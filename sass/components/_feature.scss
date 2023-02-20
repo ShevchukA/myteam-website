@@ -6,9 +6,12 @@
 
   &__info {
     margin-left: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  &__info p {
-    margin-top: 16px;
+  &__info h3 {
+    margin-bottom: 16px;
   }
 }

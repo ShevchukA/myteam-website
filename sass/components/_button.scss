@@ -45,10 +45,13 @@
     border-color: $color-white;
     color: $color-dark-green;
     transition: all 0.2s;
+    font-family: inherit;
+    width: 123px;
+    cursor: pointer;
 
     &:hover {
-      background-color: $color-police-blue;
-      border-color: $color-police-blue;
+      background-color: $color-rapture-blue;
+      border-color: $color-rapture-blue;
     }
   }
 }

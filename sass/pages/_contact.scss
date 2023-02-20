@@ -1,0 +1,41 @@
+.communication {
+  height: 790px;
+  background-color: $color-midnight-green;
+  padding: 240px $global-padding 120px $global-padding;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: relative;
+
+  &__leftBlock {
+    flex-basis: 50%;
+
+    & .headding-tertiary {
+      margin: 32px 0;
+    }
+  }
+
+  &__rightBlock {
+    flex-basis: 50%;
+    padding-left: 16px;
+  }
+
+  &__decor1 {
+    position: absolute;
+    top: 245px;
+    left: -100px;
+    width: 200px;
+  }
+
+  &__decor2 {
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+    width: 200px;
+  }
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+}
