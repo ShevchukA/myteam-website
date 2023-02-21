@@ -88,20 +88,22 @@ body {
   border-color: #ffffff;
   color: #ffffff;
   transition: all 0.2s; }
-  .btn--light:hover {
-    background-color: #ffffff;
-    border-color: #ffffff;
-    color: #002529; }
+  @media (hover: hover) {
+    .btn--light:hover {
+      background-color: #ffffff;
+      border-color: #ffffff;
+      color: #002529; } }
 
 .btn--dark {
   background: none;
   border-color: #012f34;
   color: #012f34;
   transition: all 0.2s; }
-  .btn--dark:hover {
-    background-color: #012f34;
-    border-color: #012f34;
-    color: #ffffff; }
+  @media (hover: hover) {
+    .btn--dark:hover {
+      background-color: #012f34;
+      border-color: #012f34;
+      color: #ffffff; } }
 
 .btn--secondary {
   background: #ffffff;
@@ -111,9 +113,10 @@ body {
   font-family: inherit;
   width: 123px;
   cursor: pointer; }
-  .btn--secondary:hover {
-    background-color: #79c8c7;
-    border-color: #79c8c7; }
+  @media (hover: hover) {
+    .btn--secondary:hover {
+      background-color: #79c8c7;
+      border-color: #79c8c7; } }
 
 .link {
   font-size: 18px;
@@ -121,13 +124,15 @@ body {
   text-decoration: none;
   color: #ffffff;
   transition: all 0.2s; }
-  .link:hover {
-    color: #f67e7e; }
+  @media (hover: hover) {
+    .link:hover {
+      color: #f67e7e; } }
   .link--social svg {
     fill: #ffffff;
     transition: all 0.2s; }
-  .link--social svg:hover {
-    fill: #f67e7e; }
+  @media (hover: hover) {
+    .link--social svg:hover {
+      fill: #f67e7e; } }
 
 .feature {
   display: flex;
@@ -210,13 +215,15 @@ body {
     left: calc(50% - 28px);
     z-index: 100;
     transition: all 0.5s; }
-    .card__btn:hover {
-      background-color: #79c8c7; }
+    @media (hover: hover) {
+      .card__btn:hover {
+        background-color: #79c8c7; } }
     .card__btn--active {
       background-color: #79c8c7;
       transform: rotate(45deg); }
-      .card__btn--active:hover {
-        background-color: #f67e7e; }
+      @media (hover: hover) {
+        .card__btn--active:hover {
+          background-color: #f67e7e; } }
 
 .form {
   display: flex;

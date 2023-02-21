@@ -5,8 +5,10 @@
   color: $color-white;
   transition: all 0.2s;
 
-  &:hover {
-    color: $color-light-coral;
+  @media (hover: hover) {
+    &:hover {
+      color: $color-light-coral;
+    }
   }
 
   &--social svg {
@@ -14,7 +16,9 @@
     transition: all 0.2s;
   }
 
-  &--social svg:hover {
-    fill: $color-light-coral;
+  @media (hover: hover) {
+    &--social svg:hover {
+      fill: $color-light-coral;
+    }
   }
 }

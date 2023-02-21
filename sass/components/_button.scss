@@ -20,10 +20,12 @@
     color: $color-white;
     transition: all 0.2s;
 
-    &:hover {
-      background-color: $color-white;
-      border-color: $color-white;
-      color: $color-dark-green;
+    @media (hover: hover) {
+      &:hover {
+        background-color: $color-white;
+        border-color: $color-white;
+        color: $color-dark-green;
+      }
     }
   }
 
@@ -33,10 +35,12 @@
     color: $color-sacramento-state-green;
     transition: all 0.2s;
 
-    &:hover {
-      background-color: $color-sacramento-state-green;
-      border-color: $color-sacramento-state-green;
-      color: $color-white;
+    @media (hover: hover) {
+      &:hover {
+        background-color: $color-sacramento-state-green;
+        border-color: $color-sacramento-state-green;
+        color: $color-white;
+      }
     }
   }
 
@@ -49,9 +53,11 @@
     width: 123px;
     cursor: pointer;
 
-    &:hover {
-      background-color: $color-rapture-blue;
-      border-color: $color-rapture-blue;
+    @media (hover: hover) {
+      &:hover {
+        background-color: $color-rapture-blue;
+        border-color: $color-rapture-blue;
+      }
     }
   }
 }
