@@ -14,33 +14,33 @@ body {
 body {
   font-family: "Livvic", sans-serif; }
 
-.headding-primary {
+.heading-primary {
   font-weight: 700;
   font-size: 100px;
   line-height: 100px;
   color: #ffffff; }
-  .headding-primary--small {
+  .heading-primary--small {
     font-size: 64px;
     line-height: 56px; }
-  .headding-primary > * {
+  .heading-primary > * {
     color: #f67e7e; }
 
-.headding-secondary {
+.heading-secondary {
   font-weight: 700;
   font-size: 48px;
   line-height: 48px;
   color: #ffffff; }
-  .headding-secondary--dark {
+  .heading-secondary--dark {
     color: #002529; }
-  .headding-secondary > * {
+  .heading-secondary > * {
     color: #79c8c7; }
 
-.headding-tertiary {
+.heading-tertiary {
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
   color: #f67e7e; }
-  .headding-tertiary--big {
+  .heading-tertiary--big {
     font-size: 32px;
     line-height: 45px; }
 
@@ -453,7 +453,7 @@ body {
   padding: 140px 165px 0 165px;
   text-align: center;
   position: relative; }
-  .clients__headding {
+  .clients__heading {
     margin-bottom: 64px; }
   .clients__links {
     display: flex;
@@ -479,7 +479,7 @@ body {
   position: relative; }
   .communication__leftBlock {
     flex-basis: 50%; }
-    .communication__leftBlock .headding-tertiary {
+    .communication__leftBlock .heading-tertiary {
       margin: 32px 0; }
   .communication__rightBlock {
     flex-basis: 50%;
