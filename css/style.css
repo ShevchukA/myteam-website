@@ -232,17 +232,17 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-top: 0;
     padding-left: 14px; }
-    .form__input:last-child {
+    .form__input--multiline {
       height: 84px;
       resize: none; }
+    .form__input--invalid {
+      color: rgba(246, 126, 126, 0.5);
+      border-bottom: 1px solid #f67e7e; }
     .form__input:focus {
       outline: none;
       border-bottom: 1px solid #ffffff; }
     .form__input::placeholder {
       color: rgba(255, 255, 255, 0.5); }
-    .form__input--invalid {
-      color: rgba(246, 126, 126, 0.5);
-      border-bottom: 1px solid #f67e7e; }
   .form__label {
     font-family: inherit;
     font-style: italic;

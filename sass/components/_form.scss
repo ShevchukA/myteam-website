@@ -11,13 +11,17 @@
     background-color: $color-midnight-green;
     border: none;
     border-bottom: 1px solid rgba($color-white, 0.5);
-    // margin-bottom: 24px;
     padding-top: 0;
     padding-left: 14px;
 
-    &:last-child {
+    &--multiline {
       height: 84px;
       resize: none;
+    }
+
+    &--invalid {
+      color: rgba($color-light-coral, 0.5);
+      border-bottom: 1px solid $color-light-coral;
     }
 
     &:focus {
@@ -28,40 +32,7 @@
     &::placeholder {
       color: rgba($color-white, 0.5);
     }
-
-    &--invalid {
-      color: rgba($color-light-coral, 0.5);
-      border-bottom: 1px solid $color-light-coral;
-    }
   }
-
-  // &__message {
-  //   height: 84px;
-  //   font-family: inherit;
-  //   font-size: 15px;
-  //   font-weight: 600;
-  //   color: $color-white;
-  //   background-color: $color-midnight-green;
-  //   border: none;
-  //   border-bottom: 1px solid rgba($color-white, 0.5);
-  //   padding-top: 0;
-  //   padding-left: 14px;
-  //   resize: none;
-
-  //   &:focus {
-  //     outline: none;
-  //     border-bottom: 1px solid $color-white;
-  //   }
-
-  //   &::-webkit-input-placeholder {
-  //     color: rgba($color-white, 0.5);
-  //   }
-
-  //   &--invalid {
-  //     color: rgba($color-light-coral, 0.5);
-  //     border-bottom: 1px solid $color-light-coral;
-  //   }
-  // }
 
   &__label {
     font-family: inherit;
