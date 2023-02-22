@@ -76,12 +76,28 @@
   }
 }
 
+@media only screen and (max-width: $bp-phone) {
+  .info {
+    height: 567px;
+
+    &__leftContainer {
+      flex-basis: 40%;
+      padding: 0 $phone-padding 0 $phone-padding;
+    }
+
+    &__rightContainer {
+      padding: 24px $phone-padding 0 $phone-padding;
+    }
+  }
+}
+
 // FEATURES SECTION
 .features {
   height: 684px;
   display: flex;
   background-color: $color-sacramento-state-green;
   position: relative;
+  overflow-x: hidden;
 
   &__leftBlock {
     flex-basis: 50%;

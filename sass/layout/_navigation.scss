@@ -32,3 +32,93 @@
     padding: 0 40px;
   }
 }
+
+@media only screen and (max-width: $bp-phone) {
+  .navigation {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: $bp-phone) {
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    right: 0;
+    padding: 0 24px;
+    z-index: 10;
+
+    &__btn {
+      display: block;
+      background-color: transparent;
+      border: none;
+    }
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  display: flex;
+  justify-content: end;
+
+  &--hidden {
+    display: none;
+  }
+
+  &__container {
+    width: 255px;
+    height: 100%;
+    padding: 100px 48px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: $color-police-blue;
+    overflow-x: hidden;
+
+    // &--show{
+
+    // }
+
+    // &--hide{
+
+    // }
+  }
+
+  &__close-btn {
+    display: block;
+    width: 24px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 24px;
+    top: 56px;
+  }
+
+  & .link {
+    margin-top: 24px;
+  }
+
+  & .btn {
+    margin-top: 36px;
+  }
+
+  &__decor {
+    width: 200px;
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+  }
+}

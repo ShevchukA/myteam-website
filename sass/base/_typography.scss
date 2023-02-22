@@ -23,9 +23,19 @@ body {
     line-height: 56px;
   }
 
+  @media (max-width: $bp-phone) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
   &--small {
     font-size: 64px;
     line-height: 56px;
+
+    @media (max-width: $bp-phone) {
+      font-size: 40px;
+      line-height: 40px;
+    }
   }
 
   & > * {
