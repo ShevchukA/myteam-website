@@ -622,7 +622,6 @@ body {
   background-color: #014e56;
   padding: 240px 165px 120px 165px;
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-between;
   position: relative; }
   .communication__leftBlock {
@@ -631,7 +630,7 @@ body {
       margin: 32px 0; }
   .communication__rightBlock {
     flex-basis: 50%;
-    padding-left: 16px; }
+    padding: 0 16px; }
   .communication__decor1 {
     position: absolute;
     top: 245px;
@@ -642,3 +641,19 @@ body {
     bottom: 0;
     right: -100px;
     width: 200px; }
+
+@media only screen and (max-width: 1100px) {
+  .communication {
+    height: 1204px;
+    padding: 224px 128px 112px 128px;
+    flex-direction: column; }
+    .communication__leftBlock {
+      text-align: center;
+      margin-bottom: 16px; }
+      .communication__leftBlock .feature {
+        text-align: left;
+        margin-bottom: 14px; }
+      .communication__leftBlock .heading-tertiary {
+        margin: 24px 0; }
+    .communication__decor1 {
+      top: 216px; } }

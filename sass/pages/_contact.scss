@@ -3,7 +3,6 @@
   background-color: $color-midnight-green;
   padding: 240px $global-padding 120px $global-padding;
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-between;
   position: relative;
 
@@ -17,7 +16,7 @@
 
   &__rightBlock {
     flex-basis: 50%;
-    padding-left: 16px;
+    padding: 0 16px;
   }
 
   &__decor1 {
@@ -32,5 +31,31 @@
     bottom: 0;
     right: -100px;
     width: 200px;
+  }
+}
+
+@media only screen and (max-width: $bp-tablet) {
+  .communication {
+    height: 1204px;
+    padding: 224px 128px 112px 128px;
+    flex-direction: column;
+
+    &__leftBlock {
+      text-align: center;
+      margin-bottom: 16px;
+
+      & .feature {
+        text-align: left;
+        margin-bottom: 14px;
+      }
+
+      & .heading-tertiary {
+        margin: 24px 0;
+      }
+    }
+
+    &__decor1 {
+      top: 216px;
+    }
   }
 }
