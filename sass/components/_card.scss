@@ -5,6 +5,10 @@
   min-height: 253px;
   perspective: 1500px;
 
+  @media (max-width: $bp-tablet) {
+    min-width: 253px;
+  }
+
   &__side1 {
     height: 100%;
     padding: 35px;

@@ -23,10 +23,10 @@ body {
     line-height: 56px;
   }
 
-  // &--small {
-  //   font-size: 6.4rem;
-  //   line-height: 5.6rem;
-  // }
+  &--small {
+    font-size: 64px;
+    line-height: 56px;
+  }
 
   & > * {
     color: $color-light-coral;

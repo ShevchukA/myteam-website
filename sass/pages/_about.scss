@@ -1,14 +1,19 @@
+// ABOUT SECTION
 .about {
   height: 517px;
   background-color: $color-midnight-green;
   padding: 240px $global-padding 0 $global-padding;
   display: flex;
-  flex-wrap: nowrap;
+  // flex-wrap: nowrap;
   position: relative;
 
   &__leftBlock {
-    min-width: 350px;
+    flex-basis: 30%;
     margin-right: 30px;
+  }
+
+  &__rightBlock {
+    flex-basis: 70%;
   }
 
   &__decor1 {
@@ -27,14 +32,41 @@
   }
 }
 
+@media only screen and (max-width: $bp-tablet) {
+  .about {
+    height: 556px;
+    padding: 0 $tablet-padding 0 $tablet-padding;
+    flex-direction: column;
+    text-align: center;
+
+    &__leftBlock {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      margin-right: 0;
+    }
+
+    &__rightBlock {
+      flex-basis: 50%;
+      padding: 24px 70px;
+    }
+
+    &__decor2 {
+      display: none;
+    }
+  }
+}
+
+// PERSONALITY SECTION
 .personality {
+  height: 1002px;
   background-color: $color-deep-jungle-green;
   padding: 0 $global-padding;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 1002px;
   position: relative;
 
   &__container {
@@ -42,6 +74,10 @@
     grid-template-columns: auto auto auto;
     gap: 76px 30px;
     margin-top: 64px;
+
+    @media (max-width: 1200px) {
+      gap: 76px 12px;
+    }
   }
 
   &__decor1 {
@@ -59,6 +95,19 @@
   }
 }
 
+@media only screen and (max-width: $bp-tablet) {
+  .personality {
+    height: 1220px;
+    padding: 0 $global-padding;
+
+    &__container {
+      grid-template-columns: auto auto;
+      gap: 76px 12px;
+    }
+  }
+}
+
+// CLIENTS SECTION
 .clients {
   height: 437px;
   background-color: $color-sacramento-state-green;
@@ -79,6 +128,11 @@
       object-fit: contain;
       max-width: 180px;
       max-height: 45px;
+
+      @media (max-width: 1250px) {
+        max-width: 150px;
+        max-height: 35px;
+      }
     }
   }
 
@@ -87,5 +141,37 @@
     top: 0;
     left: 0;
     width: 200px;
+  }
+}
+
+@media only screen and (max-width: $bp-tablet) {
+  .clients {
+    height: 308px;
+    background-color: $color-sacramento-state-green;
+    padding: 100px 40px 100px 40px;
+    overflow: hidden;
+
+    &__heading {
+      margin-bottom: 48px;
+    }
+
+    &__links {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+      & > img {
+        object-fit: contain;
+        max-width: 130px;
+        max-height: 28px;
+      }
+    }
+
+    &__decor1 {
+      position: absolute;
+      top: -100px;
+      left: 0;
+      width: 200px;
+    }
   }
 }
