@@ -40,3 +40,24 @@
     text-align: right;
   }
 }
+
+@media only screen and (max-width: $bp-tablet) {
+  .footer {
+    height: 270px;
+    padding: 48px 40px;
+    grid-template-areas:
+      "logo adress"
+      "logo adress"
+      "logo adress"
+      "links adress"
+      "social copyright";
+
+    &__adress {
+      text-align: end;
+    }
+
+    &__social {
+      text-align: start;
+    }
+  }
+}

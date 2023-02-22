@@ -23,4 +23,18 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @media only screen and (max-width: $bp-tablet) {
+    & .text-secondary {
+      max-width: 700px;
+    }
+
+    & .text-name {
+      margin-top: 16px;
+    }
+
+    &__photo {
+      margin-top: 16px;
+    }
+  }
 }

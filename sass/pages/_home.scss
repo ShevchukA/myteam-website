@@ -1,3 +1,4 @@
+// INFO SECTION
 .info {
   height: 700px;
   display: flex;
@@ -44,6 +45,38 @@
   }
 }
 
+@media only screen and (max-width: $bp-tablet) {
+  .info {
+    flex-direction: column;
+    text-align: center;
+
+    &__leftContainer {
+      padding: 0 $tablet-padding 0 $tablet-padding;
+      justify-content: center;
+      align-items: end;
+    }
+
+    &__rightContainer {
+      padding: 24px $tablet-padding 0 $tablet-padding;
+      justify-content: start;
+    }
+
+    &__decor1 {
+      display: none;
+    }
+
+    &__decor2 {
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    &__decor3 {
+      display: none;
+    }
+  }
+}
+
+// FEATURES SECTION
 .features {
   height: 684px;
   display: flex;
@@ -58,6 +91,10 @@
   &__rightBlock {
     flex-basis: 50%;
     padding: 200px $global-padding 0 50px;
+
+    @media only screen and (max-width: 1200px) {
+      padding: 150px $global-padding 0 50px;
+    }
   }
 
   &__decor1 {
@@ -76,6 +113,29 @@
   }
 }
 
+@media only screen and (max-width: $bp-tablet) {
+  .features {
+    flex-direction: column;
+
+    &__leftBlock {
+      flex-basis: 30%;
+      padding: 100px $tablet-padding 0 $tablet-padding;
+    }
+
+    &__rightBlock {
+      padding: 64px $tablet-padding 0 $tablet-padding;
+    }
+
+    &__decor1 {
+      top: 0;
+    }
+    &__decor2 {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+// TETIMONIALS SECTION
 .testimonials {
   height: 745px;
   display: flex;
@@ -106,5 +166,19 @@
     bottom: 0;
     right: 0;
     height: 100px;
+  }
+}
+
+@media only screen and (max-width: $bp-tablet) {
+  .testimonials {
+    height: 1200px;
+    padding: 0 $tablet-padding;
+
+    &__container {
+      margin-top: 84px;
+      display: grid;
+      grid-template-columns: auto;
+      row-gap: 70px;
+    }
   }
 }

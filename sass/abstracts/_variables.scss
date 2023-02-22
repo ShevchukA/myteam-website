@@ -10,3 +10,26 @@ $color-dark-green: #002529;
 
 // PAGE PADDING
 $global-padding: 165px;
+$tablet-padding: 97px;
+// $phone-padding: 30px;
+
+//DESIGN BREAKPOINTS
+$desktop: true;
+$tablet: false;
+$phone: false;
+$bp-tablet: 1100px;
+$bp-phone: 700px;
+
+@media (max-width: $bp-tablet) {
+  $tablet: true;
+  @if $tablet {
+    $global-padding: 97px;
+  }
+}
+
+@media (max-width: $bp-phone) {
+  $phone: true;
+  @if $phone {
+    $global-padding: 30px;
+  }
+}

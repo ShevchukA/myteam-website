@@ -14,3 +14,14 @@
     width: 200px;
   }
 }
+
+@media only screen and (max-width: $bp-tablet) {
+  .contact {
+    padding: 0 $tablet-padding;
+    overflow-y: hidden;
+
+    &__decor1 {
+      bottom: -22px;
+    }
+  }
+}
