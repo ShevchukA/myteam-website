@@ -328,6 +328,21 @@ body {
     .footer__social {
       text-align: start; } }
 
+@media only screen and (max-width: 700px) {
+  .footer {
+    height: 432px;
+    padding: 66px 24px;
+    text-align: center;
+    justify-content: center;
+    grid-template-areas: "logo" "links" "adress" "adress" "adress" "adress" "social" "copyright";
+    gap: 24px; }
+    .footer__links {
+      text-align: center; }
+    .footer__adress {
+      text-align: center; }
+    .footer__social {
+      text-align: center; } }
+
 .navigation {
   position: absolute;
   width: 100%;
@@ -436,6 +451,18 @@ body {
     .contact__decor1 {
       bottom: -22px; } }
 
+@media only screen and (max-width: 1100px) {
+  .contact {
+    height: 302px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 24px; }
+    .contact .btn {
+      margin-top: 24px;
+      z-index: 1; } }
+
 .info {
   height: 700px;
   display: flex;
@@ -539,6 +566,21 @@ body {
     .features__decor2 {
       margin-bottom: 32px; } }
 
+@media only screen and (max-width: 700px) {
+  .features {
+    height: 1074px; }
+    .features__leftBlock {
+      flex-basis: 20%;
+      padding: 64px 105px 0 24px; }
+    .features__rightBlock {
+      padding: 56px 24px 0 24px; }
+      .features__rightBlock .feature {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 48px; }
+        .features__rightBlock .feature__info {
+          margin-left: 0px; } }
+
 .testimonials {
   height: 745px;
   display: flex;
@@ -571,8 +613,15 @@ body {
     padding: 0 97px; }
     .testimonials__container {
       margin-top: 84px;
-      display: grid;
       grid-template-columns: auto;
+      row-gap: 70px; } }
+
+@media only screen and (max-width: 1100px) {
+  .testimonials {
+    height: 1410px;
+    padding: 0 24px; }
+    .testimonials__container {
+      margin-top: 140px;
       row-gap: 70px; } }
 
 .about {

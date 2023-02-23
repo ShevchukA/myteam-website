@@ -61,3 +61,33 @@
     }
   }
 }
+
+@media only screen and (max-width: $bp-phone) {
+  .footer {
+    height: 432px;
+    padding: 66px 24px;
+    text-align: center;
+    justify-content: center;
+    grid-template-areas:
+      "logo"
+      "links"
+      "adress"
+      "adress"
+      "adress"
+      "adress"
+      "social"
+      "copyright";
+    gap: 24px;
+
+    &__links {
+      text-align: center;
+    }
+    &__adress {
+      text-align: center;
+    }
+
+    &__social {
+      text-align: center;
+    }
+  }
+}
