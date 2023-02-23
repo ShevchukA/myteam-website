@@ -88,13 +88,13 @@
     position: relative;
     background-color: $color-police-blue;
 
-    // &--show{
+    &--show {
+      animation: showMenu 0.2s ease-out 1 forwards;
+    }
 
-    // }
-
-    // &--hide{
-
-    // }
+    &--hide {
+      animation: hideMenu 0.2s ease-in 1 forwards;
+    }
   }
 
   &__close-btn {

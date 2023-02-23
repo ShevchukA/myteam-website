@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,600;0,700;1,400;1,500;1,600&display=swap");
+@keyframes showMenu {
+  0% {
+    transform: translateX(255px); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes hideMenu {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(255px); } }
+
 *,
 *::after,
 *::before {
@@ -415,6 +427,10 @@ body {
     flex-direction: column;
     position: relative;
     background-color: #2c6269; }
+    .mobile-menu__container--show {
+      animation: showMenu 0.2s ease-out 1 forwards; }
+    .mobile-menu__container--hide {
+      animation: hideMenu 0.2s ease-in 1 forwards; }
   .mobile-menu__close-btn {
     display: block;
     width: 24px;
@@ -624,7 +640,6 @@ body {
     height: 1410px;
     padding: 0 24px; }
     .testimonials__container {
-      margin-top: 140px;
       row-gap: 70px; } }
 
 .about {

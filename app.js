@@ -1,3 +1,4 @@
+const app = document.querySelector("body");
 const btns = document.querySelectorAll(".card__btn");
 const cardSide1 = document.querySelectorAll(".card__side1");
 const cardSide2 = document.querySelectorAll(".card__side2");
@@ -8,7 +9,29 @@ const formLabels = document.querySelectorAll(".form__label");
 const emailInput = document.querySelector(".email");
 const emailLabel = document.querySelector(".emailLabel");
 
+const mobileMenu = document.querySelector(".mobile-menu");
+const mobileMenuContainer = document.querySelector(".mobile-menu__container");
+const menuOpenBtn = document.querySelector(".mobile-nav__btn");
+const menuCloseBtn = document.querySelector(".mobile-menu__close-btn");
+
 const regex = /^([a-zA-Z0-9_.+-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
+
+// mobile menu
+menuOpenBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("mobile-menu--hidden");
+  mobileMenuContainer.classList.remove("mobile-menu__container--hide");
+  mobileMenuContainer.classList.add("mobile-menu__container--show");
+  app.classList.add("scroll-block");
+});
+
+menuCloseBtn.addEventListener("click", () => {
+  mobileMenuContainer.classList.remove("mobile-menu__container--show");
+  mobileMenuContainer.classList.add("mobile-menu__container--hide");
+  setTimeout(() => {
+    mobileMenu.classList.add("mobile-menu--hidden");
+    app.classList.remove("scroll-block");
+  }, 200);
+});
 
 // personal cards animation
 for (const [index, btn] of btns.entries()) {
