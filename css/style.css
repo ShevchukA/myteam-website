@@ -201,6 +201,9 @@ body {
   @media (max-width: 1100px) {
     .card {
       min-width: 253px; } }
+  @media (max-width: 700px) {
+    .card {
+      min-width: 327px; } }
   .card__side1 {
     height: 100%;
     padding: 35px;
@@ -666,6 +669,21 @@ body {
     .about__decor2 {
       display: none; } }
 
+@media only screen and (max-width: 700px) {
+  .about {
+    height: 520px;
+    padding: 0 24px 0 24px;
+    overflow: hidden; }
+    .about__leftBlock {
+      flex-basis: 30%; }
+    .about__rightBlock {
+      flex-basis: 70%;
+      padding: 24px 0; }
+    .about__decor1 {
+      bottom: -100px;
+      right: -100px;
+      height: 200px; } }
+
 .personality {
   height: 1002px;
   background-color: #004047;
@@ -702,6 +720,26 @@ body {
       grid-template-columns: auto auto;
       gap: 76px 12px; } }
 
+@media only screen and (max-width: 700px) {
+  .personality {
+    height: 2062px;
+    padding: 0 24px;
+    overflow: hidden; }
+    .personality__container {
+      grid-template-columns: auto;
+      gap: 52px 0;
+      margin-top: 48px; }
+    .personality__decor1 {
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      width: 200px; }
+    .personality__decor2 {
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+      height: 100px; } }
+
 .clients {
   height: 437px;
   background-color: #012f34;
@@ -731,7 +769,6 @@ body {
 @media only screen and (max-width: 1100px) {
   .clients {
     height: 308px;
-    background-color: #012f34;
     padding: 100px 40px 100px 40px;
     overflow: hidden; }
     .clients__heading {
@@ -748,6 +785,29 @@ body {
       position: absolute;
       top: -100px;
       left: 0;
+      width: 200px; } }
+
+@media only screen and (max-width: 700px) {
+  .clients {
+    height: 632px;
+    padding: 88px 24px;
+    overflow: hidden; }
+    .clients__heading {
+      margin-bottom: 64px; }
+    .clients__links {
+      display: flex;
+      height: 360px;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      .clients__links > img {
+        object-fit: contain;
+        max-width: 150px;
+        max-height: 32px; }
+    .clients__decor1 {
+      position: absolute;
+      top: -100px;
+      left: -100px;
       width: 200px; } }
 
 .communication {

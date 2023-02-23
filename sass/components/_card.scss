@@ -9,6 +9,10 @@
     min-width: 253px;
   }
 
+  @media (max-width: $bp-phone) {
+    min-width: 327px;
+  }
+
   &__side1 {
     height: 100%;
     padding: 35px;
