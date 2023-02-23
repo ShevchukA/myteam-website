@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ShevchukA/myteam-website)
-- Live Site URL: [Add live site URL here](https://shevchuka.github.io/myteam-website/)
+- Solution URL: [github](https://github.com/ShevchukA/myteam-website)
+- Live Site URL: [github pages](https://shevchuka.github.io/myteam-website/)
 
 ## My process
 
@@ -47,4 +47,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@Shevchuk!](https://www.frontendmentor.io/profile/ShevchukA)
+- Frontend Mentor - [@ShevchukA](https://www.frontendmentor.io/profile/ShevchukA)
