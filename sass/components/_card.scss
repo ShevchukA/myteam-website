@@ -71,6 +71,7 @@
     left: calc(50% - 28px);
     z-index: 100;
     transition: all 0.5s;
+    -webkit-tap-highlight-color: transparent;
 
     @media (hover: hover) {
       &:hover {

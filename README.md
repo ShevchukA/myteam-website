@@ -31,7 +31,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [github](https://github.com/ShevchukA/myteam-website)
 - Live Site URL: [github pages](https://shevchuka.github.io/myteam-website/)
 
 ## My process

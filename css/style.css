@@ -113,7 +113,8 @@ body {
   border-radius: 100px;
   font-size: 18px;
   font-weight: 600;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; }
 
 .btn--light {
   background: none;
@@ -155,7 +156,8 @@ body {
   font-weight: 600;
   text-decoration: none;
   color: #ffffff;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  -webkit-tap-highlight-color: transparent; }
   @media (hover: hover) {
     .link:hover {
       color: #f67e7e; } }
@@ -259,7 +261,8 @@ body {
     bottom: -28px;
     left: calc(50% - 28px);
     z-index: 100;
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    -webkit-tap-highlight-color: transparent; }
     @media (hover: hover) {
       .card__btn:hover {
         background-color: #79c8c7; } }

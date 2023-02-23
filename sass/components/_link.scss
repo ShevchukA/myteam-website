@@ -4,6 +4,7 @@
   text-decoration: none;
   color: $color-white;
   transition: all 0.2s;
+  -webkit-tap-highlight-color: transparent;
 
   @media (hover: hover) {
     &:hover {
