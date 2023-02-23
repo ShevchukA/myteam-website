@@ -44,6 +44,11 @@ function onClick(btn, i) {
   cardSide2[i].classList.toggle("card__side2--turned");
 }
 
+// prevent default form behaviour
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+});
+
 // validation of form
 submitBtn.addEventListener("click", () => {
   checkEmptyFields() && emailValidation() && form.submit();
