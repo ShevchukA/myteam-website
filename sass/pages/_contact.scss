@@ -60,3 +60,35 @@
     }
   }
 }
+
+@media only screen and (max-width: $bp-tablet) {
+  .communication {
+    height: 1132px;
+    padding: 160px $phone-padding 88px $phone-padding;
+
+    &__leftBlock {
+      text-align: center;
+      margin-bottom: 16px;
+
+      & .feature {
+        text-align: left;
+        margin-bottom: 14px;
+      }
+
+      & .heading-tertiary {
+        margin: 24px 0;
+      }
+    }
+
+    &__decor1 {
+      display: none;
+    }
+
+    &__decor2 {
+      position: absolute;
+      bottom: -100px;
+      right: -100px;
+      width: 200px;
+    }
+  }
+}
